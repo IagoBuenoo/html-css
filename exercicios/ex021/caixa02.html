@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav {
+            background-color: lightgray;
+            padding: 3px;
+            display: flex;
+            box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.493);
+            border-radius: 360px;
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: blue;
+            font-weight: bold;
+            margin: 0px;
+            flex: 1;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+            color: black;
+        }
+
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 0px;
+        }
+
+        article {
+            background-color: lightgray;
+            padding: 10px;
+        }
+
+        article > aside {
+            background-color: rgb(116, 115, 115);
+            padding: 1px;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+
+        #bola {
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <nav>
+            <a href="#">Esportes</a>
+            <a href="#">F1</a>
+            <a href="#">Podcast</a>
+            <a href="#">YouTube</a>
+            <a href="#">Spotify</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat, aperiam sunt eveniet numquam maxime magni in corporis reiciendis provident dolores enim recusandae ullam laborum laudantium, beatae sapiente doloremque deserunt reprehenderit!</p>
+                <aside>
+                    <p>Artigo escrito por Iago Bueno</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por mim</p>
+    </footer> 
+    <div id="bola">
+
+    </div>
+</body>
+</html>
