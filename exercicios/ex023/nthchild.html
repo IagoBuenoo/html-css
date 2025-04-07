@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo :nth-child()</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            padding: 10px;
+            margin: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        /* Efeito Zebra: linhas alternadas de cores diferentes */
+        li:nth-child(odd) {
+            background-color: #f2f2f2; /* Linhas ímpares */
+        }
+
+        li:nth-child(even) {
+            background-color: #ffffff; /* Linhas pares */
+        }
+
+        /* Selecionando os itens múltiplos de 3 */
+        li:nth-child(3n) {
+            background-color: #add8e6; /* Aplica um fundo azul claro */
+            color: #000; /* Define a cor do texto como preto */
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+        <li>Item 6</li>
+        <li>Item 7</li>
+        <li>Item 8</li>
+        <li>Item 9</li>
+    </ul>
+</body>
+</html>
