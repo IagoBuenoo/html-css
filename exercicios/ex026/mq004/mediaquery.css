@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+/* Todas as demais mídias */
+
+/* Typical Device Breakpoints
+Pequenas telas: até 600px
+Celular: de 600px até 768px
+Tablet: 768px a 992px
+Desktop: 992px a 1200px
+Grandes telas: acima de 1200px */
+
+@media print {
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+    
+    main h1 {
+        text-shadow: none;
+        color: black;
+    }
+
+    main {
+        width: 90vw;
+        border: 2px solid black;
+    }
+
+    main::after {
+        content: 'Essa impressão foi feita durante o capítulo 25 do curso de HTML5 e CSS3 do CursoEmVideo';
+
+    }
+
+    #phone { display: none; }
+    #tablet { display: none; }
+    #print { display: block; }
+    #pc { display: none; }
+    #tv { display: none; }
+}
+
+@media screen and (min-width: 768px)  and (max-width: 992px) { 
+    body {
+        background-image: url(imagens/back-tablet.jpg);
+    }
+
+    #phone { display: none; }
+    #tablet { display: block; }
+    #print { display: none; }
+    #pc { display: none; }
+    #tv { display: none; }
+}
+
+@media screen and (min-width: 992px)  and (max-width: 1200px) {
+    body {
+        background-image: url(imagens/back-pc.jpg);
+    }
+
+    #phone { display: none; }
+    #tablet { display: none; }
+    #print { display: none; }
+    #pc { display: block; }
+    #tv { display: none; }
+
+}
+
+@media screen and (min-width: 1200px) {
+    body {
+        background-image: url(imagens/back-tv.jpg);
+    }
+
+    #phone { display: none; }
+    #tablet { display: none; }
+    #print { display: none; }
+    #pc { display: none; }
+    #tv { display: block; }
+}
